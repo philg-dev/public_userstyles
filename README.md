@@ -11,6 +11,8 @@ It is completely free and open-source.
 
 ## Asana Tweaks
 
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://userstyles.world/api/style/16906.user.css)
+
 As I saw some people being annoyed by the floating toolbar for rich text formatting
 and by the placeholder in empty lines that says *"Type / for menu"*, I've made a
 userstyle to hide those elements.
@@ -20,6 +22,7 @@ userstyle to hide those elements.
 The formatting toolbar on the bottom can still be used as normal and the
 "menu" will still open normally when you type `/` at the beginning of a new line.
 
-The userstyle is available for easy install with Stylus at:
+The userstyle is available for easy install with Stylus via the button above or
+on `userstyles.world`:
 
 https://userstyles.world/style/16906/asana-minor-editor-tweaks
