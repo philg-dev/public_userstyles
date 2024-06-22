@@ -11,7 +11,7 @@ It is completely free and open-source.
 
 ## Asana Tweaks
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://userstyles.world/api/style/16906.user.css)
+<a href=https://userstyles.world/api/style/16906.user.css target="_blank"><img src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg" alt="stylus install icon"></a>
 
 As I saw some people being annoyed by the floating toolbar for rich text formatting
 and by the placeholder in empty lines that says *"Type / for menu"*, I've made a
