@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Asana - Minor Editor Tweaks
+@namespace      philg-dev
+@version        1.0.0
+@description    Removes floating rich text formatting toolbar and placeholder text "Type / for menu" on empty lines when editing task descriptions on Asana.
+@author         philg-dev
+==/UserStyle== */
+
+@-moz-document domain("app.asana.com") {
+    /* the floating rich text formatting toolbar that appears when selecting text in task descriptions */
+    .TextEditorContextualToolbarBase, 
+    /* the placeholder text in new lines saying "Type / for menu"*/
+    .PmPlaceholders-focusedEmptyTextContainerPlaceholderWrapper {
+        display: none;
+    }
+}
