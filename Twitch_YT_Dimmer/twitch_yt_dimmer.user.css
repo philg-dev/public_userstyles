@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           Twitch & YouTube Dimmer
+@namespace      philg-dev
+@version        1.0.0
+@description    A userstyle that allows you to dynamically dim the brightness of videos on Twitch and YouTube.
+@author         philg-dev
+
+@preprocessor default
+@var range mybrightness "Brightness Level" [100, 5, 100, 1, "%"]
+
+==/UserStyle== */
+
+@-moz-document domain("twitch.tv"), domain("youtube.com") {
+    
+    /*
+        Note: this doesn't work in Firefox, since Firefox does not implement
+        the PiP API unfortunately.
+        See: https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture#browser_compatibility
+    */
+    :picture-in-picture {
+        filter: brightness(var(--mybrightness))
+    }
+
+    video {
+        filter: brightness(var(--mybrightness))
+    }
+
+}
