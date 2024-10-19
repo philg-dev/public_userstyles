@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Twitch Hide Power-Ups
+@namespace      philg-dev
+@version        1.0.0
+@description    Hides the Bit Rewards / Power-Ups section for bits in the channel point rewards panel.
+@author         philg-dev
+==/UserStyle== */
+
+@-moz-document domain("twitch.tv") {
+    /* hide power-ups for bits */
+    div[class*='bitsRewardListItem--'], /* Power-Up bit reward options */
+    div.rewards-list > :first-child:has(>p.tw-title:only-child) { /* "Power-Ups" heading */
+        display: none!important;
+    }
+}
