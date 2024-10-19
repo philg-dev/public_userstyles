@@ -53,7 +53,6 @@ This is intended to be used by people who like to use the channel points feature
 
 With this userstyle the channel point rewards panel will no longer be "cluttered" by the Power-Ups section.
 
-
 The userstyle is available for easy install with Stylus via the button above or
 on `userstyles.world`:
 
