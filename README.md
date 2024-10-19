@@ -27,6 +27,22 @@ on `userstyles.world`:
 
 https://userstyles.world/style/16906/asana-minor-editor-tweaks
 
+## Twitch & YouTube Dimmer
+
+<a href=https://userstyles.world/api/style/17961.user.css target="_blank"><img src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg" alt="stylus install icon"></a>
+
+A userstyle that allows you to dynamically dim the brightness of videos on Twitch and YouTube.
+
+To dim the brightness, use the Stylus Toolbar button, select the cogwheel icon for the **Twitch & YouTube Dimmer** style and change the brightness slider.
+
+This should work in Picture-in-Picture mode in all major browsers except for Firefox.
+Unfortunately Firefox doesn't support the `:picture-in-picture` CSS pseudo-element.
+
+The userstyle is available for easy install with Stylus via the button above or
+on `userstyles.world`:
+
+https://userstyles.world/style/17961/twitch-youtube-dimmer
+
 ## Twitch Hide Power-Ups
 
 <a href=https://userstyles.world/api/style/18710.user.css target="_blank"><img src="https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg" alt="stylus install icon"></a>
