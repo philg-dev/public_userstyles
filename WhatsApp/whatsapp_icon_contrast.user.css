@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           Improve WhatsApp message status icon contrast
+@namespace      philg-dev
+@version        1.0.0
+@description    Make icons for "message delivered" vs. "message read" easier to distinguish with customizable colors.
+@author         philg-dev
+
+@preprocessor default
+@var          color    read-color        "Message read icon color"           lime
+@var          color    delivered-color   "Message delivered icon color"      #222222
+
+==/UserStyle== */
+
+@-moz-document domain("web.whatsapp.com") {
+    span[aria-label=" Read "] {
+        color: var(--read-color);
+    }
+    span[aria-label=" Delivered "] {
+        color: var(--delivered-color);
+    }
+}
