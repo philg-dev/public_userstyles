@@ -7,14 +7,24 @@
 
 @preprocessor default
 @var          color    read-color        "Message read icon color"           lime
-@var          color    delivered-color   "Message delivered icon color"      #222222
+@var          color    delivered-color   "Message delivered icon color"      #007bc1
 
 ==/UserStyle== */
 
 @-moz-document domain("web.whatsapp.com") {
+
+    /* Selector by CSS class might be prone to fail due to generated class names.
+     * Using aria-label should be more stable, but is only available within chat, not in list of chats.
+    */
+    div.x1q15gih,
     span[aria-label=" Read "] {
         color: var(--read-color);
     }
+    
+    /* Selector by CSS class might be prone to fail due to generated class names.
+     * Using aria-label should be more stable, but is only available within chat, not in list of chats.
+    */
+    div.x1ozewix, 
     span[aria-label=" Delivered "] {
         color: var(--delivered-color);
     }
