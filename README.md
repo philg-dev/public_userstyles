@@ -17,7 +17,7 @@ As I saw some people being annoyed by the floating toolbar for rich text formatt
 and by the placeholder in empty lines that says *"Type / for menu"*, I've made a
 userstyle to hide those elements.
 
-![Screenshot floating toolbar](https://global.discourse-cdn.com/asana/optimized/3X/1/6/168acec0a27e581daf46c30b092a510e08e78637_2_615x500.png "Screenshot floating toolbar")
+![Screenshot of Asana highlighted toolbar that is hidden by this userstyle.](https://github.com/user-attachments/assets/92f304cc-9419-442b-bdf4-36cc89ee7463)
 
 The formatting toolbar on the bottom can still be used as normal and the
 "menu" will still open normally when you type `/` at the beginning of a new line.
