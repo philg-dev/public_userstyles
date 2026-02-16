@@ -1,16 +1,22 @@
 /* ==UserStyle==
 @name           Twitch & YouTube Dimmer
 @namespace      philg-dev
-@version        1.0.0
+@version        1.1.0
 @description    A userstyle that allows you to dynamically dim the brightness of videos on Twitch and YouTube.
 @author         philg-dev
 
 @preprocessor default
-@var range mybrightness "Brightness Level" [100, 5, 100, 1, "%"]
+@var range mybrightnesspage "Brightness Level Page" [100, 5, 100, 1, "%"]
+@var range mybrightnessmedia "Brightness Level Thumbnails & Videos" [100, 5, 100, 1, "%"]
+@var range mybrightnessavatars "Brightness Level Avatars" [100, 5, 100, 1, "%"]
 
 ==/UserStyle== */
 
 @-moz-document domain("twitch.tv"), domain("youtube.com") {
+
+    html {
+        filter: brightness(var(--mybrightnesspage))
+    }
     
     /*
         Note: this doesn't work in Firefox, since Firefox does not implement
@@ -18,11 +24,23 @@
         See: https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture#browser_compatibility
     */
     :picture-in-picture {
-        filter: brightness(var(--mybrightness))
+        filter: brightness(var(--mybrightnessmedia))
     }
 
-    video {
-        filter: brightness(var(--mybrightness))
+    /* videos and all images except (twitch) avatars */
+    video, img:not(.tw-image-avatar) {
+        filter: brightness(var(--mybrightnessmedia))
+    }
+    
+    /*
+        Avatars on Twitch & YT have CSS classes that contain "avatar".
+        Willingly accepting potential false positives since this makes it very easy and more future
+        proof than using more cryptic and specific ways to identify avatars.
+        YT sidebar avatars for "subscribed channels" are false negatives for that rule though...
+    */
+    img[class*="avatar"] /* blanket selector for all sorts of avatars */,
+    img.yt-img-shadow[src] /* YT sidebar subscribed channels avatars */{
+        filter: brightness(var(--mybrightnessavatars))
     }
 
 }
