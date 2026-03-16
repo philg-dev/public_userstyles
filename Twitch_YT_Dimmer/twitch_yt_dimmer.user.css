@@ -27,8 +27,8 @@
         filter: brightness(var(--mybrightnessmedia))
     }
 
-    /* videos and all images except (twitch) avatars */
-    video, img:not(.tw-image-avatar) {
+    /* videos and all images except (twitch) avatars and emotes */
+    video, img:not(.tw-image-avatar):not(.twitch-emote) {
         filter: brightness(var(--mybrightnessmedia))
     }
     
