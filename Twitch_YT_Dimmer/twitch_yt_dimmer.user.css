@@ -28,7 +28,8 @@
     }
 
     /* videos and all images except (twitch) avatars and emotes */
-    video, img:not(.tw-image-avatar):not(.twitch-emote) {
+    /* used :not(.twitch-emote) at first, but unicode emoji don't use that */
+    video, img:not(.tw-image-avatar):not([class*="emote"]) {
         filter: brightness(var(--mybrightnessmedia))
     }
     
